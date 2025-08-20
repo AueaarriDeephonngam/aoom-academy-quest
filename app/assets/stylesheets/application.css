@@ -436,3 +436,108 @@ body.brag-page {
     font-size: 22px;
   }
 }
+
+/* Medium screens */
+@media (min-width: 769px) and (max-width: 1023px) {
+  .quest-app-container {
+    padding: 40px 30px;
+    align-items: center;
+  }
+  
+  .quest-card {
+    max-width: 500px;
+  }
+  
+  .brag-document {
+    max-width: 100%;
+  }
+  
+  .brag-content {
+    padding: 30px 25px;
+    max-width: 100%;
+  }
+}
+
+/* Large screens */
+@media (min-width: 1024px) {
+  .quest-app-container {
+    padding: 60px 20px;
+    align-items: center;
+  }
+  
+  .quest-card {
+    max-width: 650px;
+  }
+  
+  .brag-document {
+    max-width: 100%;
+  }
+  
+  .brag-content {
+    padding: 50px 40px;
+    max-width: 100%;
+  }
+  
+  .header {
+    padding: 50px 50px 40px;
+  }
+  
+  .profile-section h1 {
+    font-size: 36px;
+  }
+  
+  .profile-image {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .quest-count {
+    font-size: 18px;
+  }
+  
+  .add-quest-section {
+    padding: 40px 50px;
+  }
+  
+  .add-quest-input {
+    font-size: 20px;
+    padding: 18px 24px;
+  }
+  
+  .add-btn {
+    width: 55px;
+    height: 55px;
+    font-size: 20px;
+  }
+  
+  .quest-list {
+    padding: 50px;
+    max-height: 600px;
+  }
+  
+  .quest-item {
+    padding: 22px 0;
+    gap: 22px;
+  }
+  
+  .quest-title {
+    font-size: 20px;
+  }
+  
+  .checkmark {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .checkmark::after {
+    left: 9px;
+    top: 5px;
+    width: 9px;
+    height: 14px;
+  }
+  
+  .delete-btn {
+    font-size: 22px;
+    padding: 12px;
+  }
+}
