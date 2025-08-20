@@ -44,6 +44,19 @@ body.brag-page {
   text-decoration: none;
 }
 
+/* Mobile: Remove hover effects for brag button */
+@media (max-width: 768px) {
+  .brag-btn:hover {
+    background: rgba(102, 126, 234, 0.8);
+    transform: none;
+  }
+  
+  .brag-btn:active {
+    background: rgba(102, 126, 234, 1);
+    transform: scale(0.98);
+  }
+}
+
 /* Main Quest App Container */
 .quest-app-container {
   display: -webkit-flex;
@@ -182,6 +195,19 @@ body.brag-page {
   transform: scale(0.95);
 }
 
+/* Mobile: Remove hover effects for add button */
+@media (max-width: 768px) {
+  .add-btn:hover {
+    transform: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .add-btn:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 6px rgba(102, 126, 234, 0.3);
+  }
+}
+
 /* Quest List */
 .quest-list {
   padding: 40px;
@@ -225,6 +251,21 @@ body.brag-page {
   border-radius: 15px;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+/* Mobile: Remove hover effects and use touch-friendly interactions */
+@media (max-width: 768px) {
+  .quest-item:hover {
+    background: none;
+    border-radius: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  .quest-item:active {
+    background: rgba(102, 126, 234, 0.05);
+    border-radius: 15px;
+  }
 }
 
 .quest-item.completed {
@@ -283,6 +324,19 @@ body.brag-page {
   box-shadow: 0 2px 6px rgba(102, 126, 234, 0.2);
 }
 
+/* Mobile: Remove hover effects for checkbox */
+@media (max-width: 768px) {
+  .quest-checkbox:hover .checkmark {
+    border-color: #e2e8f0;
+    box-shadow: none;
+  }
+  
+  .quest-checkbox:active .checkmark {
+    border-color: #667eea;
+    transform: scale(0.95);
+  }
+}
+
 /* Quest Title */
 .quest-title {
   flex: 1;
@@ -321,6 +375,25 @@ body.brag-page {
   background: rgba(229, 62, 62, 0.1);
   color: #c53030;
   transform: scale(1.1);
+}
+
+/* Mobile: Always show delete button */
+@media (max-width: 768px) {
+  .delete-btn {
+    opacity: 0.6;
+    position: static;
+  }
+  
+  .delete-btn:active {
+    opacity: 1;
+    background: rgba(229, 62, 62, 0.1);
+    color: #c53030;
+    transform: scale(0.95);
+  }
+  
+  .quest-item:hover .delete-btn {
+    opacity: 0.6;
+  }
 }
 
 /* Empty State */
@@ -423,6 +496,18 @@ body.brag-page {
   .checkmark {
     width: 26px;
     height: 26px;
+  }
+  
+  /* Better touch targets for mobile */
+  .quest-checkbox {
+    padding: 8px;
+    margin: -8px;
+  }
+  
+  .delete-btn {
+    min-width: 44px;
+    min-height: 44px;
+    font-size: 18px;
   }
   
   .empty-state {

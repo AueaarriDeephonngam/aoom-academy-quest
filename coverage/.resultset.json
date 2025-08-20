@@ -109,29 +109,8 @@
           null,
           null
         ]
-      },
-      "/Users/lajibolala/Documents/aoom-academy-quest/app/jobs/application_job.rb": {
-        "lines": [
-          0,
-          null,
-          null,
-          null,
-          null,
-          null,
-          0
-        ],
-        "branches": {}
-      },
-      "/Users/lajibolala/Documents/aoom-academy-quest/app/mailers/application_mailer.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {}
       }
     },
-    "timestamp": 1755661155
+    "timestamp": 1755675310
   }
 }
