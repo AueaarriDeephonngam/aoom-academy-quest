@@ -25,7 +25,7 @@ class QuestsController < ApplicationController
   def toggle
     @quest.update(done: !@quest.done)
     respond_to do |format|
-      format.html { redirect_to quests_path }
+      format.html { redirect_to quest_path }
       format.turbo_stream
     end
   end
@@ -36,6 +36,7 @@ class QuestsController < ApplicationController
       format.html { redirect_to quests_path, notice: "Quest deleted successfully!" }
       format.turbo_stream
     end
+    
   end
 
   private

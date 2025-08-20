@@ -113,7 +113,7 @@ RSpec.describe "Quests", type: :request do
     context "HTML format" do
       it "redirects to quests path" do
         patch toggle_quest_path(quest)
-        expect(response).to redirect_to(quests_path)
+        expect(response).to redirect_to(quest_path)
       end
     end
 
