@@ -1,10 +1,127 @@
-/*
- * This is a manifest file that'll be compiled into application.css.
- *
- * With Propshaft, assets are served efficiently without preprocessing steps. You can still include
- * application-wide styles in this file, but keep in mind that CSS precedence will follow the standard
- * cascading order, meaning styles declared later in the document or manifest will override earlier ones,
- * depending on specificity.
- *
- * Consider organizing styles into separate files for maintainability.
- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', Arial, sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+body:not(.brag-page) {
+  padding: 20px;
+}
+
+body.brag-page {
+  padding: 0;
+  margin: 0;
+}
+
+/* Brag Button */
+.brag-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: rgba(102, 126, 234, 0.8);
+  color: white;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 25px;
+  font-weight: 600;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.brag-btn:hover {
+  background: rgba(102, 126, 234, 0.9);
+  transform: translateY(-2px);
+  color: white;
+  text-decoration: none;
+}
+
+/* Main Quest App Container */
+.quest-app-container {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: calc(100vh - 40px);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.quest-card {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 100%;
+  max-width: 600px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Header Styles */
+.header {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  padding: 40px 40px 30px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+
+.profile-section {
+  text-align: center;
+}
+
+.profile-section h1 {
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  background-clip: text;
+}
+
+.profile-image {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 15px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  border: 4px solid white;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.quest-count {
+  color: #6c757d;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.quest-count .separator {
+  margin: 0 10px;
+  opacity: 0.5;
+}
+
+/* Add Quest Section */
+.add-quest-section {
+  padding: 30px 40px;
+  background: #f8f9fa;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
