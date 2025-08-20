@@ -20,20 +20,18 @@ test:
 
 
 production:
-  primary: &primary_production
+  primary:
     <<: *default
-    database: aoom_academy_quest_production
-    username: aoom_academy_quest
-    password: <%= ENV["AOOM_ACADEMY_QUEST_DATABASE_PASSWORD"] %>
+    url: <%= ENV["DATABASE_URL"] %>
+
   cache:
-    <<: *primary_production
-    database: aoom_academy_quest_production_cache
-    migrations_paths: db/cache_migrate
+    <<: *default
+    url: <%= ENV["DATABASE_URL"] %>
+
   queue:
-    <<: *primary_production
-    database: aoom_academy_quest_production_queue
-    migrations_paths: db/queue_migrate
+    <<: *default
+    url: <%= ENV["DATABASE_URL"] %>
+
   cable:
-    <<: *primary_production
-    database: aoom_academy_quest_production_cable
-    migrations_paths: db/cable_migrate
+    <<: *default
+    url: <%= ENV["DATABASE_URL"] %>
