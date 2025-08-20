@@ -59,17 +59,6 @@ body.brag-page {
     transform: scale(0.98);
   }
 
-
-  .add-btn:hover {
-    transform: none;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  }
-  
-  .add-btn:active {
-    transform: scale(0.95);
-    box-shadow: 0 2px 6px rgba(102, 126, 234, 0.3);
-  }
-
  
   .quest-item:hover {
     background: none;
@@ -217,12 +206,19 @@ body.brag-page {
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
+.add-quest-form {
+  display: flex;
+  gap: 15px;
+  align-items: stretch;
+}
+
 .add-quest-form .input-group {
+  flex: 1;
   display: flex;
   align-items: center;
   background: white;
-  border-radius: 30px;
-  padding: 10px;
+  border-radius: 25px;
+  padding: 5px 20px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   border: 2px solid transparent;
   transition: all 0.3s ease;
@@ -252,19 +248,19 @@ body.brag-page {
   background: linear-gradient(135deg, #667eea, #764ba2);
   color: white;
   border: none;
-  border-radius: 50%;
-  width: 48px;
-  height: 48px;
+  border-radius: 25px;
+  padding: 15px 20px;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   transition: all 0.3s ease;
   font-size: 18px;
-  margin-left: 10px;
-  min-width: 44px; 
-  min-height: 44px;
-  flex-shrink: 0; 
+  font-weight: 600;
+  min-height: 48px;
+  flex-shrink: 0;
+  white-space: nowrap;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
 }
 
 .add-btn:hover {
@@ -380,13 +376,13 @@ body.brag-page {
 .checkmark::after {
   content: '';
   position: absolute;
-  left: 8px;
-  top: 4px;
+  left: 50%;
+  top: 50%;
   width: 8px;
   height: 12px;
   border: solid white;
   border-width: 0 3px 3px 0;
-  transform: rotate(45deg);
+  transform: translate(-50%, -60%) rotate(45deg);
   opacity: 0;
   transition: opacity 0.3s ease;
 }
@@ -549,15 +545,25 @@ body.brag-page {
     padding: 25px;
   }
   
+  .add-quest-form {
+    gap: 10px;
+  }
+  
+  .add-quest-form .input-group {
+    padding: 3px 16px;
+    border-radius: 20px;
+  }
+  
   .add-quest-input {
     font-size: 16px;
-    padding: 12px 16px;
+    padding: 12px 0;
   }
   
   .add-btn {
-    width: 40px;
-    height: 40px;
+    padding: 12px 16px;
     font-size: 16px;
+    min-height: 40px;
+    border-radius: 20px;
   }
   
   .quest-list {
@@ -666,15 +672,25 @@ body.brag-page {
     padding: 40px 50px;
   }
   
+  .add-quest-form {
+    gap: 20px;
+  }
+  
+  .add-quest-form .input-group {
+    padding: 8px 24px;
+    border-radius: 28px;
+  }
+  
   .add-quest-input {
     font-size: 20px;
-    padding: 18px 24px;
+    padding: 18px 0;
   }
   
   .add-btn {
-    width: 56px;
-    height: 56px;
+    padding: 18px 24px;
     font-size: 20px;
+    min-height: 56px;
+    border-radius: 28px;
   }
   
   .quest-list {
@@ -697,10 +713,11 @@ body.brag-page {
   }
   
   .checkmark::after {
-    left: 9px;
-    top: 5px;
+    left: 50%;
+    top: 50%;
     width: 9px;
     height: 14px;
+    transform: translate(-50%, -60%) rotate(45deg);
   }
   
   .delete-btn {
@@ -1096,11 +1113,6 @@ body.brag-page {
     color: #e53e3e;
     background: none;
     transform: none;
-  }
-  
-  .add-btn:hover {
-    transform: none;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   }
   
   .brag-btn:hover {
