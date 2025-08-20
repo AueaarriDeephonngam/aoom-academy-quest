@@ -541,3 +541,63 @@ body.brag-page {
     padding: 12px;
   }
 }
+
+/* Extra large screens */
+@media (min-width: 1400px) {
+  .quest-app-container {
+    padding: 80px 40px;
+  }
+  
+  .brag-content {
+    padding: 60px 50px;
+    max-width: 100%;
+  }
+}
+
+/* Animations */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.quest-item {
+  animation: slideIn 0.3s ease-out;
+}
+
+.quest-card {
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* Focus states for accessibility */
+.add-quest-input:focus {
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.add-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.3);
+}
+
+.quest-checkbox input[type="checkbox"]:focus + .checkmark {
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2);
+}
+
+.delete-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(229, 62, 62, 0.2);
+}
