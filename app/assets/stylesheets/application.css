@@ -125,3 +125,108 @@ body.brag-page {
   background: #f8f9fa;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
+
+.add-quest-form .input-group {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 30px;
+  padding: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.add-quest-form .input-group:focus-within {
+  border-color: #667eea;
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.2);
+}
+
+.add-quest-input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  padding: 15px 20px;
+  outline: none;
+  font-size: 18px;
+  color: #2d3748;
+}
+
+.add-quest-input::placeholder {
+  color: #a0aec0;
+  font-weight: 400;
+}
+
+.add-btn {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+.add-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 16px rgba(102, 126, 234, 0.3);
+}
+
+.add-btn:active {
+  transform: scale(0.95);
+}
+
+/* Quest List */
+.quest-list {
+  padding: 40px;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.quest-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.quest-list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.quest-list::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+.quest-list::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+.quest-item {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #f1f1f1;
+  gap: 20px;
+  transition: all 0.3s ease;
+}
+
+.quest-item:last-child {
+  border-bottom: none;
+}
+
+.quest-item:hover {
+  background: rgba(102, 126, 234, 0.02);
+  border-radius: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.quest-item.completed {
+  opacity: 0.6;
+}
