@@ -1,15 +1,16 @@
 require 'rails_helper'
 
-# Specs in this file have access to a helper object that includes
-# the BragDocumentsHelper. For example:
-#
-# describe BragDocumentsHelper do
-#   describe "string concat" do
-#     it "concats two strings with spaces" do
-#       expect(helper.concat_strings("this","that")).to eq("this that")
-#     end
-#   end
-# end
 RSpec.describe BragDocumentsHelper, type: :helper do
-  pending "add some examples to (or delete) #{__FILE__}"
+  describe "brag documents helper methods" do
+    context "when helper methods exist in BragDocumentsHelper" do
+      it "includes BragDocumentsHelper module" do
+        expect(helper.class.included_modules).to include(BragDocumentsHelper)
+      end
+    end
+  
+    it "can be instantiated without errors" do
+      expect { helper }.not_to raise_error
+    end
+  end
+
 end
