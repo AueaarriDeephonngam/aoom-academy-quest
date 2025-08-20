@@ -12,5 +12,4 @@ RSpec.describe QuestsHelper, type: :helper do
       expect { helper }.not_to raise_error
     end
   end
- 
 end
