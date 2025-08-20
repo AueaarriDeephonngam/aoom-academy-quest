@@ -9,4 +9,5 @@ Rails.application.routes.draw do
   end
 
   get "brag_documents", to: "brag_documents#show", as: "brag_document"
+  get "*path", to: redirect("/")
 end
