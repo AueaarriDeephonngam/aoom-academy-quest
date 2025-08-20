@@ -46,14 +46,92 @@ body.brag-page {
 
 /* Mobile: Remove hover effects for brag button */
 @media (max-width: 768px) {
+ 
   .brag-btn:hover {
     background: rgba(102, 126, 234, 0.8);
     transform: none;
+    color: white;
+    text-decoration: none;
   }
   
   .brag-btn:active {
     background: rgba(102, 126, 234, 1);
     transform: scale(0.98);
+  }
+
+
+  .add-btn:hover {
+    transform: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .add-btn:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 6px rgba(102, 126, 234, 0.3);
+  }
+
+ 
+  .quest-item:hover {
+    background: none;
+    border-radius: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  .quest-item:active {
+    background: rgba(102, 126, 234, 0.05);
+    border-radius: 15px;
+  }
+
+
+  .quest-checkbox:hover .checkmark {
+    border-color: #e2e8f0;
+    box-shadow: none;
+  }
+  
+  .quest-checkbox:active .checkmark {
+    border-color: #667eea;
+    transform: scale(0.95);
+  }
+
+  .delete-btn:hover {
+    opacity: 0.6;
+    background: none;
+    color: #e53e3e;
+    transform: none;
+  }
+  
+  .delete-btn:active {
+    opacity: 1;
+    background: rgba(229, 62, 62, 0.1);
+    color: #c53030;
+    transform: scale(0.95);
+  }
+  
+  .quest-item:hover .delete-btn {
+    opacity: 0.6;
+  }
+
+  .quest-list::-webkit-scrollbar-thumb:hover {
+    background: #c1c1c1;
+  }
+
+
+  .back-btn:hover {
+    color: white;
+    background: rgba(102, 126, 234, 0.8);
+    text-decoration: none;
+    transform: none;
+  }
+  
+  .back-btn:active {
+    background: rgba(102, 126, 234, 1);
+    transform: scale(0.98);
+  }
+
+  .add-quest-form .input-group:focus-within {
+    border-color: #667eea;
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.15);
   }
 }
 
@@ -184,6 +262,9 @@ body.brag-page {
   transition: all 0.3s ease;
   font-size: 18px;
   margin-left: 10px;
+  min-width: 44px; 
+  min-height: 44px;
+  flex-shrink: 0; 
 }
 
 .add-btn:hover {
@@ -996,6 +1077,35 @@ body.brag-page {
   
   .empty-state p {
     color: #a0aec0;
+  }
+}
+
+/* Mobile: Remove dark mode hover effects too */
+@media (prefers-color-scheme: dark) and (max-width: 768px) {
+  .quest-item:hover {
+    background: none;
+  }
+  
+  .quest-checkbox:hover .checkmark {
+    background: #4a5568;
+    border-color: #718096;
+    box-shadow: none;
+  }
+  
+  .delete-btn:hover {
+    color: #e53e3e;
+    background: none;
+    transform: none;
+  }
+  
+  .add-btn:hover {
+    transform: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .brag-btn:hover {
+    background: rgba(102, 126, 234, 0.8);
+    transform: none;
   }
 }
 
