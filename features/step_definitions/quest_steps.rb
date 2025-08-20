@@ -136,5 +136,5 @@ When('I click on {string} button') do |button_text|
 end
 
 Then('I should be on the brag document page') do
-  expect(current_path).to eq('/BragDocuments')
+  expect(current_path).to eq('/brag_documents')
 end
