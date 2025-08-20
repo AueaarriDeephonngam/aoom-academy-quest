@@ -13,7 +13,7 @@
       <img src="./assets/0.13.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2025-08-20T09:33:44+07:00">2025-08-20T09:33:44+07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2025-08-20T09:53:25+07:00">2025-08-20T09:53:25+07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -42,9 +42,9 @@
   </div>
 
   <div class="t-line-summary">
-    <b>28</b> relevant lines,
+    <b>31</b> relevant lines,
     <span class="green"><b>0</b> lines covered</span> and
-    <span class="red"><b>28</b> lines missed. </span>
+    <span class="red"><b>31</b> lines missed. </span>
     (<span class="red">
   0.0%
 </span>
@@ -149,10 +149,10 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#a1aedc8d6bd8ba6b0708250fb3516208ba59aa7f" class="src_link" title="app/models/quest.rb">app/models/quest.rb</a></td>
             <td class="red strong cell--number t-file__coverage">0.00 %</td>
-            <td class="cell--number">2</td>
-            <td class="cell--number">2</td>
+            <td class="cell--number">6</td>
+            <td class="cell--number">5</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">2</td>
+            <td class="cell--number">5</td>
             <td class="cell--number">0.00</td>
             
           </tr>
@@ -327,9 +327,9 @@
   </div>
 
   <div class="t-line-summary">
-    <b>5</b> relevant lines,
+    <b>8</b> relevant lines,
     <span class="green"><b>0</b> lines covered</span> and
-    <span class="red"><b>5</b> lines missed. </span>
+    <span class="red"><b>8</b> lines missed. </span>
     (<span class="red">
   0.0%
 </span>
@@ -368,10 +368,10 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#a1aedc8d6bd8ba6b0708250fb3516208ba59aa7f" class="src_link" title="app/models/quest.rb">app/models/quest.rb</a></td>
             <td class="red strong cell--number t-file__coverage">0.00 %</td>
-            <td class="cell--number">2</td>
-            <td class="cell--number">2</td>
+            <td class="cell--number">6</td>
+            <td class="cell--number">5</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">2</td>
+            <td class="cell--number">5</td>
             <td class="cell--number">0.00</td>
             
           </tr>
@@ -1249,9 +1249,9 @@
     
 
     <div class="t-line-summary">
-      <b>2</b> relevant lines.
+      <b>5</b> relevant lines.
       <span class="green"><b>0</b> lines covered</span> and
-      <span class="red"><b>2</b> lines missed.</span>
+      <span class="red"><b>5</b> lines missed.</span>
     </div>
 
     
@@ -1273,6 +1273,46 @@
       
         <div>
           <li class="missed" data-hits="0" data-linenumber="2">
+            
+
+            
+
+            <code class="ruby">  validates :title, presence: true</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="3">
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="4">
+            
+
+            
+
+            <code class="ruby">  scope :completed, -&gt; { where(done: true) }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="5">
+            
+
+            
+
+            <code class="ruby">  scope :pending, -&gt; { where(done: [ false, nil ]) }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="6">
             
 
             
