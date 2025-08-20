@@ -10,6 +10,15 @@
         ],
         "branches": {}
       },
+      "/Users/lajibolala/Documents/aoom-academy-quest/app/controllers/brag_documents_controller.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {}
+      },
       "/Users/lajibolala/Documents/aoom-academy-quest/app/controllers/quests_controller.rb": {
         "lines": [
           0,
@@ -29,6 +38,13 @@
         "branches": {}
       },
       "/Users/lajibolala/Documents/aoom-academy-quest/app/helpers/application_helper.rb": {
+        "lines": [
+          0,
+          0
+        ],
+        "branches": {}
+      },
+      "/Users/lajibolala/Documents/aoom-academy-quest/app/helpers/brag_documents_helper.rb": {
         "lines": [
           0,
           0
@@ -83,6 +99,6 @@
         "branches": {}
       }
     },
-    "timestamp": 1755658405
+    "timestamp": 1755659388
   }
 }

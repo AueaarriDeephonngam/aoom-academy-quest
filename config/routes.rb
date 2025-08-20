@@ -8,5 +8,5 @@ Rails.application.routes.draw do
     end
   end
 
-  get "BragDocuments", to: "brag_documents#show" , as: "brag_document"
+  get "BragDocuments", to: "brag_documents#show", as: "brag_document"
 end
