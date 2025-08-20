@@ -322,3 +322,117 @@ body.brag-page {
   color: #c53030;
   transform: scale(1.1);
 }
+
+/* Empty State */
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  color: #a0aec0;
+}
+
+.empty-state i {
+  font-size: 64px;
+  margin-bottom: 20px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.empty-state h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #4a5568;
+}
+
+.empty-state p {
+  font-size: 16px;
+  color: #a0aec0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  body {
+    padding: 15px;
+  }
+  
+  .quest-app-container {
+    padding: 20px 15px;
+    align-items: flex-start;
+    min-height: calc(100vh - 30px);
+  }
+  
+  .quest-card {
+    max-width: 100%;
+    border-radius: 16px;
+  }
+  
+  .brag-btn {
+    position: static;
+    display: block;
+    margin: 0 auto 30px;
+    text-align: center;
+    font-size: 16px;
+  }
+  
+  .header {
+    padding: 30px 25px 25px;
+  }
+  
+  .profile-section h1 {
+    font-size: 28px;
+  }
+  
+  .profile-image {
+    width: 90px;
+    height: 90px;
+  }
+  
+  .add-quest-section {
+    padding: 25px;
+  }
+  
+  .add-quest-input {
+    font-size: 16px;
+    padding: 12px 16px;
+  }
+  
+  .add-btn {
+    width: 45px;
+    height: 45px;
+    font-size: 16px;
+  }
+  
+  .quest-list {
+    padding: 25px;
+    max-height: 400px;
+  }
+  
+  .quest-item {
+    padding: 16px 0;
+    gap: 16px;
+  }
+  
+  .quest-title {
+    font-size: 16px;
+  }
+  
+  .checkmark {
+    width: 26px;
+    height: 26px;
+  }
+  
+  .empty-state {
+    padding: 50px 20px;
+  }
+  
+  .empty-state i {
+    font-size: 56px;
+  }
+  
+  .empty-state h3 {
+    font-size: 22px;
+  }
+}
