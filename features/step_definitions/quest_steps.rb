@@ -97,7 +97,7 @@ end
 
 
 Then('the quest {string} should be marked as completed') do |quest_title|
-  sleep 2  
+  sleep 2
   quest_item = find('.quest-item', text: quest_title)
   within(quest_item) do
     expect(find('input[type="checkbox"]', visible: false)).to be_checked
